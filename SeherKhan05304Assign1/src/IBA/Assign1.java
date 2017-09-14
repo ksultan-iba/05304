@@ -5,10 +5,12 @@ import java.util.Scanner;
 /**
  * Created by Seher Khan on 9/7/2017.
  */
+//the javadoc should be meaningful and why static methods?
 public class Assign1 {
     static Scanner s = new Scanner(System.in);
 
     //given a number n in the range [0,+inf), gives the sum 1+2+3+...+n
+    //Can n be passed as an input parameter?
     public static void sum(){
         System.out.println("Enter integer in the interval [0,+inf): ");
         int n=Integer.parseInt(s.nextLine());
@@ -20,6 +22,7 @@ public class Assign1 {
     }
 
     //given a number n in the range [0,+inf), finds n!
+    //Can n be passed as an input parameter? public method without javadoc??
     public static void factorial(){
         System.out.println("Enter integer in the interval [0,+inf): ");
         int n=Integer.parseInt(s.nextLine());
@@ -82,7 +85,7 @@ public class Assign1 {
             }
 
         }
-
+//there is a lot of code duplication between the methods FirstOption and SecondOption.
     private static double FirstOption(){
         System.out.println("Enter Instruction Count: ");
         int inCount=Integer.parseInt(s.nextLine());
